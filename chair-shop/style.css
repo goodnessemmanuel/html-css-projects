@@ -58,6 +58,7 @@ h2 {
   inline-block*/
   display: inline-block;
   font-weight: 500;
+  border-radius: 100px; /*don't use 50% if the element is not a square element, instead use a value that is higher than the element height*/
 }
 .btn:hover,
 .btn:active {
@@ -92,6 +93,8 @@ h1 {
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 24px;
+  /* text shadow is good when you have text on top of an image */
+  /* text-shadow: 0 10px 3px rgba(0, 0, 0, 0.07); */
 }
 
 .header-text {
@@ -102,10 +105,15 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -123,6 +131,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -143,6 +152,14 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .chair-box {
   padding: 24px;
 }
@@ -169,11 +186,17 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  /* for solid you can apply fill properties as well e.g:
+  fill: red; */
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
 }
 
