@@ -1,0 +1,104 @@
+/**Global reset**/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  border-top: 5px solid #3aafa6;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+  color: #3aafa6;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+nav{
+    font-size: 18px;
+}
+article{
+    margin-bottom: 60px;
+}
+#author {
+  font-style: italic;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
+/*Always use margin bottom to 
+create space between elements
+that way you follow on convention
+and it will be easier for you to 
+figure out when a styling goes wrong
+*/
+.main-header {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+aside {
+  border-top: 5px solid #3aafa6;
+  border-bottom: 5px solid #3aafa6;
+  padding: 50px 0;
+}
+/*Pseudo classes*/
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  color: red;
+}
+li:nth-child(even) {
+  color: blue;
+}
+article p:last-child {
+  color: red;
+} */
+
+/** a element with href attribute*/
+/**LVHA must be in this other**/
+a:link {
+  color: #3aafa6;
+  text-decoration: none;
+}
+a:visited {
+  color: #3aafa6;
+}
+
+a:hover {
+  color: #2344ff;
+}
+
+a:active {
+  color: #2344ff;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+li {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
