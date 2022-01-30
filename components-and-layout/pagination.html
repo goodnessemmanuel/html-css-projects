@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paginate</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    */
+      /* 
+        SOURCE: https://yeun.github.io/open-color
+        MAIN(PRIMARY) COLOR (TEAL 9): #087f5b
+        SECONDARY COLOR (GREY 8): #343a40
+     */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .paginate {
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+      }
+      .paginate p {
+        width: 32px;
+        height: 32px;
+        padding: 8px;
+        cursor: pointer;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .paginate p:last-child {
+        margin-right: 0;
+      }
+      .paginate p.active {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #087f5b;
+      }
+      .paginate-icon {
+        border-radius: 100px;
+        border: 1px solid #087f5b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .paginate-icon--left,
+      .paginate-icon--right {
+        stroke: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paginate">
+      <p class="paginate-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="paginate-icon--left"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </p>
+      <p>1</p>
+      <p>2</p>
+      <p class="active">3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>&#8230;</p>
+      <p>23</p>
+      <p class="paginate-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="paginate-icon--right"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </p>
+    </div>
+  </body>
+</html>
